@@ -18,10 +18,10 @@ var Mgl_acpn = function() {
 			this.list_img.append(list_img)
 		}
 	}
-	this.setLength = function(list_elem, width, heigth) {
-		for (var i in list) {
-			list_elem[i].setAttribute("width", width);
-			list_elem[i].setAttribute("height", height);
+	this.setLength = function(width, heigth) {
+		for (var i = 0; i < this.list_elem.length; i++) {
+			this.list_elem[i].setAttribute("width", width);
+			this.list_elem[i].setAttribute("height", height);
 		}
 	}
 	this.setPng = function() {
