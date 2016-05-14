@@ -10,12 +10,12 @@ var Mgl_acpn = function() {
 	this.list_img = [];
 	this.append_list_elem = function(list_elem) {
 		for (var i in list_elem) {
-			this.list_elem.append(list_elem)
+			this.list_elem.push(list_elem)
 		}
 	}
 	this.append_list_img = function(list_img) {
 		for (var i in list_img) {
-			this.list_img.append(list_img)
+			this.list_img.push(list_img)
 		}
 	}
 	this.setLength = function(width, heigth) {
