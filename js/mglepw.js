@@ -1,9 +1,9 @@
 var jquery = document.createElement("script");
-var jcycle = document.createElement("script");
+var jquery_cycle = document.createElement("script");
 jquery.setAttribute("src", "http://mglepw.github.io/js/jquery-1.12.3.min.js");
-jcycle.setAttribute("src", "http://mglepw.github.io/js/jquery.cycle.all.js");
+jquery_cycle.setAttribute("src", "http://mglepw.github.io/js/jquery.cycle.all.js");
 document.getElementsByTagName("head")[0].appendChild(jquery);
-document.getElementsByTagName("head")[0].appendChild(jcycle);
+document.getElementsByTagName("head")[0].appendChild(jquery_cycle);
 
 var Mgl_acpn = function() {
 	this.list_elem = []
@@ -29,9 +29,9 @@ var Mgl_acpn = function() {
 			this.list_elem[i].setAttribute("src", this.list_img[i]);
 		}
 	}
-	this.setParentNode = function(pNode) {
+	this.setNodeUp = function(nodeUp) {
 		for (var i = 0; i < this.list_elem.length; i++) {
-			pNode.appendChild(this.list_elem[i]);
+			nodeUp.appendChild(this.list_elem[i]);
 		}
 	}
 }
