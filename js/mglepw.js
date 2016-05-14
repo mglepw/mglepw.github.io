@@ -29,9 +29,9 @@ var Mgl_acpn = function() {
 			this.list_elem[i].setAttribute("src", this.list_img[i]);
 		}
 	}
-	this.setParentNode = function(parentNode) {
+	this.setParentNode = function(pNode) {
 		for (var i = 0; i < this.list_elem.length; i++) {
-			parentNode.appendChild(this.list_elem[i]);
+			pNode.appendChild(this.list_elem[i]);
 		}
 	}
 }
