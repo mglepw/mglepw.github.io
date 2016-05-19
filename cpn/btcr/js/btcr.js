@@ -1,4 +1,4 @@
-var btcr = document.getElementById("coc");
+var btcr = document.getElementById("btcr");
 var btcr_img1 = document.createElement("img");
 var btcr_img2 = document.createElement("img");
 var btcr_img3 = document.createElement("img");
