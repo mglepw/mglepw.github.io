@@ -7,4 +7,5 @@ object_radio.setNodeUp(radio);
 object_radio.append_elem("http://mglepw.github.io/cpn/radio/img/bdl.png");
 object_radio.append_elem("http://mglepw.github.io/cpn/radio/img/ccm.png");
 object_radio.createGUI();
+object_radio.setDelay(1300);
 object_radio.play();

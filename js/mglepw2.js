@@ -4,6 +4,7 @@ var Mgl_acpn2 = function() {
 	this.effect = "scrollDown";
 	this.width = 226;
 	this.height = 226;
+	this.delay = 1000;
 
 	this.append_elem = function(img) {
 		var elem = document.createElement("img");
@@ -15,6 +16,9 @@ var Mgl_acpn2 = function() {
 	this.setLength = function(wght, hght) {
 		this.weight = wght;
 		this.height = hght;
+	}
+	this.setDelay = function(delay) {
+		this.delay = delay;
 	}
 	this.setNodeUp = function(nUp) {
 		this.nodeUp = nUp;
@@ -29,7 +33,8 @@ var Mgl_acpn2 = function() {
 	}
 	this.play = function() {
 		$(this.nodeUp).cycle({
-			fx: this.effect
+			fx: this.effect,
+			delay: this.delay
 		});
 	}
 }
