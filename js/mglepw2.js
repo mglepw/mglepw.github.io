@@ -5,6 +5,7 @@ var Mgl_acpn2 = function() {
 	this.width = 226;
 	this.height = 226;
 	this.delay = 1000;
+	this.timeout = 1000;
 
 	this.append_elem = function(img) {
 		var elem = document.createElement("img");
@@ -20,6 +21,9 @@ var Mgl_acpn2 = function() {
 	this.setDelay = function(delay) {
 		this.delay = delay;
 	}
+	this.setTimeout = function(timeout) {
+		this.timeout = timeout;
+	}
 	this.setNodeUp = function(nUp) {
 		this.nodeUp = nUp;
 	}
@@ -34,6 +38,7 @@ var Mgl_acpn2 = function() {
 	this.play = function() {
 		$(this.nodeUp).cycle({
 			fx: this.effect,
+			timeout: this.timeout,
 			delay: this.delay
 		});
 	}
