@@ -7,6 +7,7 @@ object_vrt.setNodeUp(vrt);
 object_vrt.append_elem("http://mglepw.github.io/cpn/vrt/img/vrt1.png");
 object_vrt.append_elem("http://mglepw.github.io/cpn/vrt/img/vrt2.png");
 object_vrt.append_elem("http://mglepw.github.io/cpn/vrt/img/vrt3.png");
+object_vrt.append_elem("http://mglepw.github.io/cpn/vrt/img/vrt4.png");
 object_vrt.createGUI();
 object_vrt.setTimeout(6400);
 object_vrt.play();
