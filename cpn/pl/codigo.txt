@@ -1,0 +1,3 @@
+<div id="plasfran" style="overflow: hidden; width: 226px; height: 226px"></div>
+<script src="http://mglepw.github.io/js/mglepw2.js"></script>
+<script src="http://mglepw.github.io/cpn/pl/js/plasfran.js"></script>
